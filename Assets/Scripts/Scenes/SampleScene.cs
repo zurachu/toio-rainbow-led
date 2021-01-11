@@ -43,7 +43,7 @@ public class SampleScene : MonoBehaviour
         var colors = new List<Color>();
         for (var i = 0; i < division; i++)
         {
-            colors.Add(Color.Lerp(fromColor, toColor, (float)(division - i) / division));
+            colors.Add(Color.Lerp(fromColor, toColor, (float)i / division));
         }
 
         return colors;
